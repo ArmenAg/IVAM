@@ -1,3 +1,8 @@
 Abstract
 ================================
 Magnetic Resonance Imaging (MRI) provides three-dimensional  anatomical  and  physiological  details  of  the  humanbrain. We describe the Integrated Voxel Analysis Method (IVAM) which, through machine learning, classifies MRI images of brainsafflicted with early Alzheimer’s Disease (AD). This fully automaticmethod uses an extra trees regressor model in which the featurevector input contains the intensities of voxels belonging to corre-sponding regions in the brain, whereby the effect of Alzheimer’son a single voxel can be predicted. The resulting tree is used in thefollowing two steps: a K-nearest neighbor (KNN) algorithm basedon  Euclidean  distance  with  the  feature  vector  to  classify  wholeimages based on their distribution of affected voxels and a voxel-by-voxel  classification  by  the  tree  of  every  voxel  in  the  image.Voxel-by-voxel  classification  is  followed  by  an  Ising  model  filterto remove artifacts and to facilitate clustering of the classificationresults which identifies significant voxel clusters affected by AD.We  apply  this  method  to  T1-weighted  MRI  images  obtainedfrom  the  Open  Access  Series  of  Imaging  Studies  (OASIS)  usingimages  belonging  to  normal  and  early  AD-afflicted  individualsassociated  with  a  Client  Dementia  Rating  (CDR)  which  we  useas the target in the supervised learning. Furthermore, statisticalanalysis of the results is conducted using pre-labeled brain atlasesto  automatically  pinpoint  significantly  affected  brain  regions.While achieving 96% AD classification accuracy on 233 images inthe OASIS dataset, the method reveals morphological differencescaused by the onset of AD.
+
+Authors
+==========
+Armen Aghajanyan
+Matthew Hur
