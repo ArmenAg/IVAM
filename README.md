@@ -4,5 +4,5 @@ Magnetic Resonance Imaging (MRI) provides three-dimensional  anatomical  and  ph
 
 Authors
 ==========
-Armen Aghajanyan
+Armen Aghajanyan,
 Matthew Hur
